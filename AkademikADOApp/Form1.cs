@@ -14,8 +14,8 @@ namespace AkademikADOApp
 {
     public partial class Form1 : Form
     {
-        // Connection
-        string ConnString = "Data Source=PIREE\\FIRA;Initial Catalog=DBAkademikADO;Integrated Security=True";
+        // Connection String
+        string connString = "Data Source=PIREE\\FIRA;Initial Catalog=AkademikDB;Integrated Security=True";
         public Form1()
         {
             InitializeComponent();
