@@ -54,6 +54,10 @@ namespace AkademikADOApp
                     MessageBox.Show("Koneksi sudah dalam keadaan tertutup.");
                 }
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Gagal memutus koneksi : " + ex.Message);
+            }
         }
     }
 }
