@@ -15,7 +15,7 @@ namespace AkademikADOApp
     public partial class Form1 : Form
     {
         // Connection String
-        string connString = "Data Source=PIREE\\FIRA;Initial Catalog=AkademikDB;Integrated Security=True";
+        string connString = "Data Source=PIREE\\FIRA;Initial Catalog=DBAkademikADO;Integrated Security=True";
 
         //Object SQL Connection
         SqlConnection conn;
@@ -34,10 +34,13 @@ namespace AkademikADOApp
                 lblStatus.Text = "Status : Database Connected";
                 MessageBox.Show("Koneksi ke database berhasil!");
             }
-            catch (Exception ex) 
+            catch (Exception ex)
             {
                 MessageBox.Show("Koneksi gagal : " + ex.Message);
             }
+        }
+        private void btnDisconnect_Click(object sender, EventArgs e)
+        {
         }
     }
 }
