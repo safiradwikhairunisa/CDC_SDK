@@ -16,6 +16,10 @@ namespace AkademikADOApp
     {
         // Connection String
         string connString = "Data Source=PIREE\\FIRA;Initial Catalog=AkademikDB;Integrated Security=True";
+
+        //Object SQL Connection
+        SqlConnection conn;
+
         public Form1()
         {
             InitializeComponent();
