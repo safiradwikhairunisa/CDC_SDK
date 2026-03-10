@@ -29,7 +29,9 @@ namespace AkademikADOApp
         {
             try
             {
-               conn = new SqlConnection(connString);
+                conn = new SqlConnection(connString);
+                conn.Open();
             }
         }
+    }
 }
